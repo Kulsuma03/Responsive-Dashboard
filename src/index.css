@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.border-dashboard{
+    border-radius: 25px 0px 0px 0px;
+}
+.bars{
+    display: none;
+}
+.main-chart{
+    width: 500px;
+    height: 350px;
+}
+
+svg circle{
+    transform: translate(5px, 5px);
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+      position: fixed;
+      /* display: none; */
+      z-index: 9;
+      height: 100%;
+      background-color: #111827;
+    }
+    .border-dashboard{
+        border-radius: 0px;
+    }
+    .bars{
+        display: flex;
+        z-index: 9;
+      }
+}
